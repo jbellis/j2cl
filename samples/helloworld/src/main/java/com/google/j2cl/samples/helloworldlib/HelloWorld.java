@@ -27,6 +27,9 @@ import jsinterop.annotations.JsType;
 public class HelloWorld {
 
   public static String getHelloWorld() {
+      if (true) {
+	  throw new RuntimeException("rte");
+      }
     return "Hello from Java!";
   }
 }
